@@ -1,0 +1,45 @@
+export const getCountryFlagUrl = (languageCode: string): string => {
+  // Map language codes to country codes for flagcdn.com
+  const countryCodeMap: { [key: string]: string } = {
+    en: "gb",
+    es: "es",
+    fr: "fr",
+    de: "de",
+    it: "it",
+    pt: "pt",
+    ru: "ru",
+    ja: "jp",
+    ko: "kr",
+    zh: "cn",
+    ar: "sa",
+    hi: "in",
+    tr: "tr",
+    nl: "nl",
+    pl: "pl",
+    sv: "se",
+    da: "dk",
+    fi: "fi",
+    no: "no",
+    cs: "cz",
+    el: "gr",
+    he: "il",
+    th: "th",
+    vi: "vn",
+    id: "id",
+    ms: "my",
+    uk: "ua",
+    ro: "ro",
+    hu: "hu",
+    sk: "sk",
+    bg: "bg",
+    hr: "hr",
+    sr: "rs",
+    sl: "si",
+    lt: "lt",
+    lv: "lv",
+    et: "ee",
+  };
+
+  const countryCode = countryCodeMap[languageCode] || languageCode;
+  return `https://flagcdn.com/${countryCode}.svg`;
+};

@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply min-h-screen overflow-hidden;
+    background: transparent;
+  }
+
+  #root {
+    @apply min-h-screen;
+    background: transparent;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white border border-gray-200 transition-colors;
+  }
+
+  .card-hover {
+    @apply transition-all duration-150;
+  }
+
+  .card-hover:hover {
+    @apply bg-gray-50;
+  }
+
+  .btn-primary {
+    @apply text-white border transition-all duration-150;
+    background-color: #14746f;
+    border-color: #14746f;
+  }
+
+  .btn-primary:hover {
+    background-color: #0f5750;
+    border-color: #0f5750;
+  }
+
+  .btn-primary:active {
+    @apply scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply bg-white text-gray-700 border border-gray-300 transition-all duration-150;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-gray-50 border-gray-400;
+  }
+
+  .btn-secondary:active {
+    @apply scale-[0.98];
+  }
+
+  .input-field {
+    @apply bg-white border border-gray-300 transition-all duration-150 outline-none;
+  }
+
+  .input-field:focus {
+    @apply ring-1;
+    border-color: #14746f;
+    ring-color: #14746f;
+  }
+
+  .sidebar {
+    @apply border-r border-white/20;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
