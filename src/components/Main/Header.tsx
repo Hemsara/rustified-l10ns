@@ -6,12 +6,12 @@ interface HeaderProps {
 
 export const Header = ({ projectName, onScan, lastScanned }: HeaderProps) => {
   return (
-    <header className="border-b border-gray-200 px-8 py-4 flex items-center justify-between">
+    <header className="border-b border-gray-200 dark:border-gray-700 px-8 py-4 flex items-center justify-between">
       <div>
-        <h2 className="text-xl font-semibold text-gray-900">
+        <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
           {projectName || "Select a project"}
         </h2>
-        <p className="text-sm text-gray-500 mt-0.5">
+        <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
           Scan Dart files and generate ARB translation files
         </p>
       </div>
@@ -35,7 +35,7 @@ export const Header = ({ projectName, onScan, lastScanned }: HeaderProps) => {
           </svg>
           Scan Project
         </button>
-        <p className="text-xs text-gray-500">
+        <p className="text-xs text-gray-500 dark:text-gray-400">
           Last scanned: {lastScanned}
         </p>
       </div>

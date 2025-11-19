@@ -21,3 +21,9 @@ export interface Language {
   name: string;
   nativeName: string;
 }
+
+export interface ExtractedString {
+  key: string;
+  value: string;
+  file_name: string;
+}
