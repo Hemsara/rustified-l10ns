@@ -104,7 +104,7 @@ Found a bug? Want to add a feature? PRs are welcome! This is a learning project,
 
 Just a developer trying to learn Rust one project at a time. If you find this useful, give it a star!
 
-- GitHub: [@vehanhemsara](https://github.com/vehanhemsara)
+- GitHub: [@vehanhemsara](https://github.com/Hemsara)
 
 ---
 
