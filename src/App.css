@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+:root {
+  --color-primary: #14746f;
+  --color-primary-hover: #0f5750;
+  --color-primary-light: #16a5a0;
+}
+
 @layer base {
   html {
     @apply h-full;
@@ -37,15 +43,19 @@
     @apply bg-gray-700;
   }
 
+  .bg-primary {
+    background-color: var(--color-primary-light);
+  }
+
   .btn-primary {
     @apply text-white border transition-all duration-150;
-    background-color: #14746f;
-    border-color: #14746f;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
   }
 
   .btn-primary:hover {
-    background-color: #0f5750;
-    border-color: #0f5750;
+    background-color: var(--color-primary-hover);
+    border-color: var(--color-primary-hover);
   }
 
   .btn-primary:active {
@@ -82,8 +92,8 @@
 
   .input-field:focus {
     @apply ring-1;
-    border-color: #14746f;
-    ring-color: #14746f;
+    border-color: var(--color-primary);
+    ring-color: var(--color-primary);
   }
 
   .input-field::placeholder {

@@ -27,3 +27,13 @@ export interface ExtractedString {
   value: string;
   file_name: string;
 }
+
+export interface ProgressPayload {
+  status: string;
+  file: string | null;
+  index: number | null;
+  total: number | null;
+  message: string | null;
+}
+
+export type AppStep = "idle" | "scanning" | "scanned" | "generating";
